@@ -73,5 +73,23 @@
     )
 
 # Update
+### update() or save()
+###### udate()
+    - db.mycol.update(
+        {"title": "Other title"},
+        $set: {"title": "Other title 2"}
+    )
+
+###### save()
+    - db.mycol.save({
+        _id: ObjectId(7df78ad8902c),
+        "title": "third title",
+        "by": "newUser"
+    })
 
 # Delete
+### remove
+###### db.colname.remove(critteria)
+    - db.mycol.remove({ "title": "third title" })
+    - .............................................
+    - db.mycol.remove({ ord_qty: { $gt: 100} })
