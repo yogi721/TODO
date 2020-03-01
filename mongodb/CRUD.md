@@ -44,12 +44,22 @@
         {
             $and:[
                 {"by": "yogi721"},
-                {"title": "Second doc"}
+                {"title": "Other title"}
             ]
         }
     )
 
 ###### in mysql (where by = 'yogi721' AND title = 'Second doc')
+
+#### or (RDBMS => where by = 'yogi721' AND title = 'Second doc')
+- db.mycol.find(
+        {
+            $or:[
+                {"by": "yogi721"},
+                {"title": "Second doc"}
+            ]
+        }
+    )
 
 
 # Update
