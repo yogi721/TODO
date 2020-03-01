@@ -1,7 +1,7 @@
 # This is what i want to do
 
 ## Javascript Challenge
-    - 30 Days Of [Javascript](https://google.com)
+    - 30 Days Of [Javascript][GitHub Pages](https://pages.github.com/)
     - Node.js 
     - Express 
     - mongoose
