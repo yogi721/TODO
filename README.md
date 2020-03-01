@@ -1,7 +1,7 @@
 # This is what i want to do
 
 ## Javascript Challenge
-    -<a href="https://github.com/yogi721/node_image/tree/day2">30 Days Of Javascript</a>
+    - 30 Days Of [Javascript] ((https://github.com/yogi721/node_image/tree/day2")
     - Node.js 
     - Express 
     - mongoose
