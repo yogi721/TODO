@@ -61,6 +61,16 @@
         }
     )
 
+#### AND and OR together
+    - db.mycol.find(
+        {
+            "likes": {$gt:10}
+            $or:[
+                {"by": "yogi721"},
+                {"title": "Other title"}
+            ]
+        }
+    )
 
 # Update
 
