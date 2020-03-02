@@ -1,6 +1,5 @@
-# Create (insert)
-### insert() or save()
-#### db.collectionName.insert(document)
+# Create (insert(), insertOne(), insertMany())
+### insert() 
     - db.mycol.insert({
         _id: ObjectId(7df78ad8902c),
         title: ('MongoDB insert ),
@@ -12,6 +11,22 @@
     })
 
     if the collection doesn't exest, Mongodb will create it, then insert the document into it
+### insertOne() 
+    - db.mycol.insertOne({
+        _id: ObjectId(7df78ad8902c),
+        title: ('MongoDB insert ),
+        description: 'MongoDB is NoSQL database',
+        by: 'Yogi721',
+        url: 'https://linkedin.com/mehdi-semlali-1980',
+        tags: ['mongodb','database', 'NoSQL', 'insert'],
+        likes: 1000
+    })
+### insertMany() 
+    - db.mycol.insertMany([
+        { title: ('MongoDB insert') },
+        { title: ('Second doc') }
+    ])
+### save()
 
 #### db.collectionName.insert([{multi},{documents}])
     - db.mycol.insert([
@@ -73,9 +88,9 @@
     )
 
 # Update
-### update() or save()
-###### udate()
-    - db.mycol.update(
+### replaceOne(), updateMany(), update(), save()
+###### udateOne()
+    - db.mycol.updateOne(
         {"title": "Other title"},
         $set: {"title": "Other title 2"}
     )
@@ -87,7 +102,7 @@
         "by": "newUser"
     })
 
-# Delete
+# Delete (deleteOne(), deleteMany(), remove())
 ### remove
 ###### db.colname.remove(critteria)
     - db.mycol.remove({ "title": "third title" })
